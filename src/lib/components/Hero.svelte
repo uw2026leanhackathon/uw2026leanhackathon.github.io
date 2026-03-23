@@ -36,7 +36,7 @@
 		</p>
 
 		<div class="hero-actions">
-			<a href="https://docs.google.com/forms/d/14MZXvEmHV1iRMvncWguiUfyeDJbYOFKQVbbDYiSkf6A" class="btn btn-primary" target="_blank" rel="noopener">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSddhWsNBjHwR04gvikdlyrcbUICzmNJmq0JUDeVXd1huiFdyw/viewform" class="btn btn-primary" target="_blank" rel="noopener">
 				Apply to Participate →
 			</a>
 			<a href="https://docs.google.com/forms/d/1B0-I4yCrn4_Dbq9udhRTfFZIYdRP_kPwpoTtRjLVEvs" class="btn btn-outline" target="_blank" rel="noopener">
