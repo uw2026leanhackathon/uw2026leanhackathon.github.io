@@ -31,15 +31,15 @@
 			A hackathon bringing together students, faculty, and industry partners
 			to work on projects showcasing the power of the
 			<a href="https://lean-lang.org/" target="_blank" rel="noopener">Lean Proof Assistant</a>.
-			Projects span mathematical formalization, security protocol verification,
-			AI-driven autoformalization, probabilistic programming, and meta-programming tactics.
+			Projects span algorithm-driven proofs, pictorial reasoning, paper folding,
+			games, data structures, and AI-driven autoformalization.
 		</p>
 
 		<div class="hero-actions">
 			<a href="https://docs.google.com/forms/d/e/1FAIpQLSddhWsNBjHwR04gvikdlyrcbUICzmNJmq0JUDeVXd1huiFdyw/viewform" class="btn btn-primary" target="_blank" rel="noopener">
 				Apply to Participate →
 			</a>
-			<a href="https://docs.google.com/forms/d/1B0-I4yCrn4_Dbq9udhRTfFZIYdRP_kPwpoTtRjLVEvs" class="btn btn-outline" target="_blank" rel="noopener">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdI-axdDzcTjmWrBlEXj7tz_W2Pg0tPXZYhihYKa9ACW7pGRw/viewform?usp=publish-editor" class="btn btn-outline" target="_blank" rel="noopener">
 				RSVP as Invited Guest
 			</a>
 		</div>

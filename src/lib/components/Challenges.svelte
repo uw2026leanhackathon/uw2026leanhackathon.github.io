@@ -1,32 +1,24 @@
 <script lang="ts">
 	const challenges = [
 		{
-			title: 'Mathematical Formalization',
-			description: 'Formalize a theorem or definition in Lean, possibly using autoformalization tools. Contribute directly to Mathlib.'
+			title: 'Proof by Algorithm: Linear Programming',
+			description: 'Write a tactic that can prove a given point is an optimal solution to a linear program (using duality).'
 		},
 		{
-			title: 'Security Protocol Verification',
-			description: 'Formalize a network security protocol in Lean, providing machine-checked guarantees about its correctness.'
+			title: 'Proof by Algorithm: Graph Algorithms',
+			description: 'Implement algorithms for graphs such as computing augmenting paths for matchings and flows. Prove that these paths really do augment the matching/flow in the appropriate way.'
 		},
 		{
-			title: 'Autoformalization Model',
-			description: 'Design a model targeting benchmarks like the AI Mathematical Olympiad progress prizes or SorryDB.'
+			title: 'Proof by Picture: Paper Folding',
+			description: 'Formalize the Huzita–Hatori Axioms of Paper Folding in Lean and prove that they can be used to solve cubic equations. Build a tool to visualize the folds and verifiably compute the coordinates of points obtained through folds.'
 		},
 		{
-			title: 'Probabilistic Programming',
-			description: 'Formalize a probabilistic programming language in Lean, combining PL theory with formal verification.'
+			title: 'Sudoku in Lean',
+			description: 'Make Sudoku in Lean. Write a solver for Sudoku in Lean. Prove the correctness of your solver.'
 		},
 		{
-			title: 'Lean Sandbox for ChatGPT',
-			description: 'Build a Lean sandbox server connected to ChatGPT, enabling AI-assisted interactive theorem proving.'
-		},
-		{
-			title: 'Neuro-Symbolic Conjectures',
-			description: 'Auto-generate mathematical conjectures in Lean from informal text using neuro-symbolic AI techniques.'
-		},
-		{
-			title: 'Meta-Programming Tactics',
-			description: 'Create or improve a Lean tactic — extend Lean\'s automation capabilities through meta-programming.'
+			title: 'Data Structures for Lean',
+			description: 'Port a useful data structure to Lean and write useful theorems about it. For example, there are many variants of map data structures which may be useful. See <a href="https://github.com/bendyworks/lean-map" target="_blank" rel="noopener">lean-map</a> for inspiration.'
 		}
 	];
 </script>
@@ -35,7 +27,7 @@
 	<div class="container">
 		<h2 class="section-title">Projects</h2>
 		<p class="section-subtitle">
-			A tentative list of projects. Up-to-date as of March 19, 2026.
+			A tentative list of projects. Up-to-date as of April 1, 2026.
 		</p>
 
 		<ul class="challenges-list">
@@ -44,7 +36,7 @@
 					<span class="challenge-marker"></span>
 					<div class="challenge-content">
 						<h3>{challenge.title}</h3>
-						<p>{challenge.description}</p>
+						<p>{@html challenge.description}</p>
 					</div>
 				</li>
 			{/each}
