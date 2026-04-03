@@ -25,7 +25,7 @@
 
 <section id="projects" class="section" style="position: relative; overflow: hidden;">
 	<div class="container">
-		<h2 class="section-title">Projects</h2>
+		<h2 class="section-title">Project Ideas</h2>
 		<p class="section-subtitle">
 			Use these project ideas as inspiration. Feel free to pick from this list, but make sure to put in your own twist! Up-to-date as of April 1, 2026.
 		</p>
