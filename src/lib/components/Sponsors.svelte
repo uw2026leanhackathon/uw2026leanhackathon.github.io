@@ -2,7 +2,7 @@
 	const organizers = [
 		{ name: 'Jarod Alper', department: 'Mathematics', role: 'Faculty', website: 'https://sites.math.washington.edu//~jarod/' },
 		{ name: 'Gilbert Bernstein', department: 'PLSE', role: 'Faculty', website: 'http://gilbertbernstein.com/' },
-		{ name: 'Dhruv Bhatia', department: 'Mathematics', role: 'PhD Student', website: 'https://dbhatia.xyz/' },
+		{ name: 'Dhruv Bhatia', department: 'Mathematics', role: 'PhD Student', website: '' },
 		{ name: 'Oliver Flatt', department: 'PLSE', role: 'PhD Student', website: 'https://www.oflatt.com/' },
 		{ name: 'Vasily Ilin', department: 'Mathematics', role: 'PhD Student', website: 'https://vilin97.github.io/' },
 		{ name: 'Eric Klavins', department: 'ECE', role: 'Faculty', website: 'https://klavinslab.org/people/Klavins.html' },
