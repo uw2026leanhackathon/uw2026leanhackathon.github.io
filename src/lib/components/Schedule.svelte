@@ -3,6 +3,7 @@
 		time: string;
 		title: string;
 		speaker?: string;
+		speakerUrl?: string;
 		description?: string;
 		abstract?: string;
 		venue: string;
@@ -17,14 +18,14 @@
 
 	const schedule: ScheduleDay[] = [
 		{
-			date: 'May 1 (Thu)',
-			label: 'Pre-Event',
+			date: 'May 1 (Fri)',
+			label: 'Team Initial Meetup',
 			events: [
 				{
-					time: '4:30 – 6:00 PM',
-					title: 'Meet Your Teammates & Setup',
-					description: 'Meet your teammates, get briefed on your project, and set up a common Lean environment. Info will also be shared with external participants.',
-					venue: 'TBD',
+					time: '3:30 – 5:30 PM',
+					title: 'Team Initial Meetup',
+					description: 'Meet your team and get setup with Lean.',
+					venue: 'ECE 269',
 					type: 'social'
 				}
 			]
@@ -36,16 +37,20 @@
 				{
 					time: '3:30 – 4:30 PM',
 					title: 'Lean: Machine-Checked Mathematics and AI Collaboration',
-					speaker: 'Leonardo de Moura, creator of Lean',
-					abstract: 'Lean is a proof assistant and programming language designed to make formal verification practical. In this talk, Leo will describe how Lean works, what it can do today, and where it is going. The core idea is simple: every mathematical claim and every program can be checked by a machine. This changes what collaboration looks like — between mathematicians, between engineers, and increasingly between humans and AI systems. The talk will cover recent work on proof automation and AI-assisted formalization, including experiments where multi-agent AI systems work autonomously on Lean tasks, as well as the Lean FRO, a nonprofit building Lean as long-term open infrastructure for mathematics and verified software.',
-					venue: 'TBD',
+					speaker: 'Leonardo de Moura',
+					speakerUrl: 'https://leodemoura.github.io/',
+					description:
+						'Leonardo de Moura is a Senior Principal Applied Scientist in the Automated Reasoning Group at AWS. He is also the Chief Architect and co-founder of the Lean FRO, a non-profit organization dedicated to the development of the Lean theorem prover and programming language.',
+					abstract:
+						'Lean is a proof assistant and programming language designed to make formal verification practical. In this talk, Leo will describe how Lean works, what it can do today, and where it is going. The core idea is simple: every mathematical claim and every program can be checked by a machine. This changes what collaboration looks like — between mathematicians, between engineers, and increasingly between humans and AI systems. The talk will cover recent work on proof automation and AI-assisted formalization, including experiments where multi-agent AI systems work autonomously on Lean tasks, as well as the Lean FRO, a nonprofit building Lean as long-term open infrastructure for mathematics and verified software.',
+					venue: 'ECE 269',
 					type: 'talk'
 				},
 				{
 					time: '4:30 – 6:00 PM',
 					title: 'Reception',
 					description: 'Reception for hackathon participants along with faculty from Mathematics, Computer Science, and ECE.',
-					venue: 'TBD',
+					venue: 'ECE 269',
 					type: 'social'
 				}
 			]
@@ -54,24 +59,24 @@
 			date: 'May 9 (Sat)',
 			label: 'Hacking Day 1',
 			events: [
-				{ time: '9:00 AM', title: 'Registration, Bagels & Coffee', venue: 'TBD', type: 'food' },
-				{ time: '10:00 – 10:30 AM', title: 'Problem Overview', description: 'Presentation of all projects.', venue: 'TBD', type: 'talk' },
-				{ time: '10:30 AM – 12:00 PM', title: 'Hacking Session 1', venue: 'TBD', type: 'hack' },
-				{ time: '12:00 – 1:30 PM', title: 'Catered Lunch', venue: 'TBD', type: 'food' },
-				{ time: '1:30 – 5:30 PM', title: 'Hacking Session 2', venue: 'TBD', type: 'hack' },
-				{ time: '5:30 PM', title: 'Catered Dinner', description: 'Dinner to encourage folks to stay late and keep hacking!', venue: 'TBD', type: 'food' },
-				{ time: 'Evening', title: 'Late Night Hacking', description: 'Room will be available for those who want to continue.', venue: 'TBD', type: 'hack' }
+				{ time: '9:00 AM', title: 'Registration & Coffee', venue: 'ECE 2nd Floor Atrium', type: 'food' },
+				{ time: '10:00 – 10:30 AM', title: 'Event Kickoff', venue: 'ECE 269', type: 'talk' },
+				{ time: '10:30 AM – 12:00 PM', title: 'Hacking Session 1', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' },
+				{ time: '12:00 – 1:30 PM', title: 'Lunch', venue: 'ECE 2nd Floor Atrium', type: 'food' },
+				{ time: '1:30 – 5:30 PM', title: 'Hacking Session 2', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' },
+				{ time: '5:30 PM', title: 'Dinner', venue: 'ECE 2nd Floor Atrium', type: 'food' },
+				{ time: 'Evening', title: 'Hacking Session 3', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' }
 			]
 		},
 		{
 			date: 'May 10 (Sun)',
 			label: 'Hacking Day 2',
 			events: [
-				{ time: '9:00 AM', title: 'Coffee & Bagels', venue: 'TBD', type: 'food' },
-				{ time: '9:30 AM – 12:00 PM', title: 'Hacking Session 3', venue: 'TBD', type: 'hack' },
-				{ time: '12:00 – 1:00 PM', title: 'Catered Lunch', venue: 'TBD', type: 'food' },
-				{ time: '1:00 – 3:00 PM', title: 'Final Hacking Sprint', venue: 'TBD', type: 'hack' },
-				{ time: '4:00 PM', title: '🏆 Prizes & Presentations', description: 'Teams present their work. Prizes awarded.', venue: 'TBD', type: 'ceremony' }
+				{ time: '9:00 AM', title: 'Coffee', venue: 'ECE 2nd Floor Atrium', type: 'food' },
+				{ time: '9:30 AM – 12:00 PM', title: 'Hacking Session 4', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' },
+				{ time: '12:00 – 1:00 PM', title: 'Lunch', venue: 'ECE 2nd Floor Atrium', type: 'food' },
+				{ time: '1:00 – 3:00 PM', title: 'Hacking Session 5', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' },
+				{ time: '4:00 PM', title: 'Event Close', venue: 'ECE 269', type: 'ceremony' }
 			]
 		}
 	];
@@ -124,9 +129,18 @@
 							</div>
 							<h3>{event.title}</h3>
 						{#if event.speaker}
-							<p class="timeline-speaker">{event.speaker}</p>
+							<p class="timeline-speaker">
+								{#if event.speakerUrl}
+									<a href={event.speakerUrl} target="_blank" rel="noopener">{event.speaker}</a>
+								{:else}
+									{event.speaker}
+								{/if}
+							</p>
 						{/if}
-						<span class="timeline-venue">📍 {event.venue}</span>
+						<div class="timeline-venue-badge" aria-label="Event location">
+							<span class="timeline-venue-icon">📍</span>
+							<span>{event.venue}</span>
+						</div>
 						{#if event.description}
 							<p>{event.description}</p>
 						{/if}
@@ -256,12 +270,24 @@
 		margin-bottom: 0.3rem;
 	}
 
-	.timeline-venue {
-		display: inline-block;
-		font-size: 0.78rem;
-		color: var(--text-muted);
-		margin-bottom: 0.4rem;
-		opacity: 0.8;
+	.timeline-venue-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		padding: 0.45rem 0.8rem;
+		margin-bottom: 0.75rem;
+		border-radius: 999px;
+		border: 1px solid rgba(139, 84, 250, 0.28);
+		background: rgba(139, 84, 250, 0.12);
+		color: var(--text-heading);
+		font-size: 0.8rem;
+		font-weight: 600;
+		letter-spacing: 0.01em;
+	}
+
+	.timeline-venue-icon {
+		font-size: 0.85rem;
+		line-height: 1;
 	}
 
 	.timeline-content p {
@@ -275,6 +301,17 @@
 		color: var(--gold-400);
 		font-weight: 500;
 		margin-bottom: 0.3rem;
+	}
+
+	.timeline-speaker a {
+		color: inherit;
+		text-decoration: underline;
+		text-decoration-color: rgba(240, 204, 91, 0.45);
+		text-underline-offset: 0.16em;
+	}
+
+	.timeline-speaker a:hover {
+		text-decoration-color: currentColor;
 	}
 
 	.timeline-abstract {

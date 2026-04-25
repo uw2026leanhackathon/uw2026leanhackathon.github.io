@@ -7,7 +7,7 @@
 		{ name: 'Vasily Ilin', department: 'Mathematics', role: 'PhD Student', website: 'https://vilin97.github.io/' },
 		{ name: 'Eric Klavins', department: 'ECE', role: 'Faculty', website: 'https://klavinslab.org/people/Klavins.html' },
 		{ name: 'Zachary Tatlock', department: 'PLSE', role: 'Faculty', website: 'https://ztatlock.net/' },
-		{ name: 'Michael Zeng', department: 'Mathematics', role: 'PhD Student', website: 'https://zengrf.github.io' }
+		{ name: 'Michael R. Zeng', department: 'Mathematics', role: 'PhD Student', website: 'https://zengrf.github.io' }
 	];
 
 	function getInitials(name: string): string {

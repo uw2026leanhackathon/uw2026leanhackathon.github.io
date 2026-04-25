@@ -18,6 +18,7 @@
 		<div class="nav-links">
 			<a href="#schedule">Schedule</a>
 			<a href="#projects">Projects</a>
+			<a href="#judges">Judges</a>
 			<a href="#organizers">Organizers & Sponsors</a>
 			<a href="https://docs.google.com/forms/d/e/1FAIpQLSddhWsNBjHwR04gvikdlyrcbUICzmNJmq0JUDeVXd1huiFdyw/viewform" class="btn btn-primary btn-nav" target="_blank" rel="noopener">
 				Apply Now
