@@ -41,8 +41,11 @@
 					speakerUrl: 'https://leodemoura.github.io/',
 					description:
 						'Leonardo de Moura is a Senior Principal Applied Scientist in the Automated Reasoning Group at AWS. He is also the Chief Architect and co-founder of the Lean FRO, a non-profit organization dedicated to the development of the Lean theorem prover and programming language.',
-					abstract:
-						'Lean is a proof assistant and programming language designed to make formal verification practical. In this talk, Leo will describe how Lean works, what it can do today, and where it is going. The core idea is simple: every mathematical claim and every program can be checked by a machine. This changes what collaboration looks like — between mathematicians, between engineers, and increasingly between humans and AI systems. The talk will cover recent work on proof automation and AI-assisted formalization, including experiments where multi-agent AI systems work autonomously on Lean tasks, as well as the Lean FRO, a nonprofit building Lean as long-term open infrastructure for mathematics and verified software.',
+					abstract: [
+						'Lean is a proof assistant and programming language designed to make formal verification practical. In this talk, I will describe how Lean works, what it can do today, and where it is going.',
+						'The core idea is simple: every mathematical claim and every program can be checked by a machine. This changes what collaboration looks like: between mathematicians, between engineers, and increasingly between humans and AI systems. When a proof is machine-checked, you do not need to trust the author. You just check it.',
+						'I will discuss recent work on proof automation and AI-assisted formalization, including experiments where multi-agent AI systems work autonomously on Lean tasks. I will also describe the Lean FRO, a nonprofit building Lean as long-term open infrastructure for mathematics and verified software.'
+					].join('\n\n'),
 					venue: 'ECE 269',
 					type: 'talk'
 				},
@@ -335,6 +338,7 @@
 		line-height: 1.6;
 		color: var(--text-muted);
 		opacity: 0.85;
+		white-space: pre-line;
 	}
 
 	@keyframes fadeInLeft {
