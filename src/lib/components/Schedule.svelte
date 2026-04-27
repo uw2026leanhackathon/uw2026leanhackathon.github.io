@@ -46,7 +46,7 @@
 						'The core idea is simple: every mathematical claim and every program can be checked by a machine. This changes what collaboration looks like: between mathematicians, between engineers, and increasingly between humans and AI systems. When a proof is machine-checked, you do not need to trust the author. You just check it.',
 						'I will discuss recent work on proof automation and AI-assisted formalization, including experiments where multi-agent AI systems work autonomously on Lean tasks. I will also describe the Lean FRO, a nonprofit building Lean as long-term open infrastructure for mathematics and verified software.'
 					].join('\n\n'),
-					venue: 'ECE 269',
+					venue: 'ECE 105',
 					type: 'talk'
 				},
 				{
@@ -68,7 +68,7 @@
 				{ time: '12:00 – 1:30 PM', title: 'Lunch', venue: 'ECE 2nd Floor Atrium', type: 'food' },
 				{ time: '1:30 – 5:30 PM', title: 'Hacking Session 2', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' },
 				{ time: '5:30 PM', title: 'Dinner', venue: 'ECE 2nd Floor Atrium', type: 'food' },
-				{ time: 'Evening', title: 'Hacking Session 3', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' }
+				{ time: 'until 9:00 PM', title: 'Hacking Session 3', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' }
 			]
 		},
 		{
@@ -78,8 +78,9 @@
 				{ time: '9:00 AM', title: 'Coffee', venue: 'ECE 2nd Floor Atrium', type: 'food' },
 				{ time: '9:30 AM – 12:00 PM', title: 'Hacking Session 4', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' },
 				{ time: '12:00 – 1:00 PM', title: 'Lunch', venue: 'ECE 2nd Floor Atrium', type: 'food' },
-				{ time: '1:00 – 3:00 PM', title: 'Hacking Session 5', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' },
-				{ time: '4:00 PM', title: 'Event Close', venue: 'ECE 269', type: 'ceremony' }
+				{ time: '1:00 – 2:00 PM', title: 'Hacking Session 5', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' },
+				{ time: '2:00 – 3:30 PM', title: 'Project Wrap-up ➕ Judging', venue: 'ECE 269, ECE 303, ECE 403', type: 'hack' },
+				{ time: '4:00 PM', title: 'Event Close ➕ Awards and Prizes', venue: 'ECE 269', type: 'ceremony' }
 			]
 		}
 	];
