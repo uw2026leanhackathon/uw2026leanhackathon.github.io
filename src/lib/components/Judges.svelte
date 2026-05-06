@@ -9,9 +9,8 @@
 
 	const judges: Judge[] = [
 		{ name: 'Varun Pant', affiliation: 'Amazon', accent: '#f0cc5b' },
-		{ name: 'Eric Klavins', affiliation: 'ECE Chair', accent: '#7cf0b5' },
-		{ name: 'Eric Weiser', affiliation: 'Google DeepMind', note: 'To be confirmed', accent: '#a87cff' },
-		{ name: 'Leonardo de Moura', note: 'To be confirmed', website: 'https://leodemoura.github.io/', accent: '#c9aaff' }
+		{ name: 'Eric Klavins', affiliation: 'ECE Department Chair', accent: '#7cf0b5' },
+		{ name: 'Jarod Alper', affiliation: 'Math faculty and Google DeepMind', accent: '#a87cff' },
 	];
 
 	function getInitials(name: string): string {
