@@ -17,9 +17,9 @@
 		</a>
 		<div class="nav-links">
 			<a href="#projects">Winners</a>
-			<a href="#about">About</a>
 			<a href="#judges">Guests & Judges</a>
 			<a href="#organizers">Organizers & Sponsors</a>
+			<a href="#about">About</a>
 		</div>
 	</div>
 </nav>
