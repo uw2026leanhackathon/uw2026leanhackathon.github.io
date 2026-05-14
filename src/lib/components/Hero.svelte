@@ -1,4 +1,6 @@
 <script lang="ts">
+	import fullGroupPhoto from '$lib/assets/full_group.jpeg';
+
 	let visible = $state(false);
 
 	$effect(() => {
@@ -36,6 +38,14 @@
 		</p>
 
 		<p class="hero-note">Stay tuned for more in 2027.</p>
+
+		<div class="hero-group-shot">
+			<img
+				src={fullGroupPhoto}
+				alt="UW Lean Hackathon participants gathered together"
+				class="hero-group-image"
+			/>
+		</div>
 	</div>
 
 	<!-- Floating code snippet decoration -->
@@ -182,6 +192,22 @@
 		font-weight: 600;
 		letter-spacing: 0.01em;
 		margin-bottom: 4rem;
+	}
+
+	.hero-group-shot {
+		position: relative;
+		margin-top: 0.5rem;
+		max-width: 920px;
+		border-radius: 24px;
+		overflow: hidden;
+		border: 1px solid rgba(139, 84, 250, 0.2);
+		box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+	}
+
+	.hero-group-image {
+		display: block;
+		width: 100%;
+		height: auto;
 	}
 
 	/* Floating code decoration */

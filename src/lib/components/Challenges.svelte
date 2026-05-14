@@ -1,4 +1,8 @@
 <script lang="ts">
+	import firstPlacePhoto from '$lib/assets/1st_place.jpg';
+	import secondPlacePhoto from '$lib/assets/2nd_place.jpg';
+	import thirdPlacePhoto from '$lib/assets/3rd_place.jpg';
+
 	const winningProjects = [
 		{
 			placement: '1st Place',
@@ -8,7 +12,9 @@
 				'Brings category-theoretic rewriting to Lean 4 with `cat_rw`, letting users rewrite objects, goals, and propositions using isomorphisms.',
 			link: 'https://github.com/leomayer1/cat-rw',
 			team: ['Leopold Mayer', 'Grant Yang', 'Brian Nugent'],
-			highlight: 'gold'
+			highlight: 'gold',
+			image: firstPlacePhoto,
+			imageAlt: 'First place winners posing with the cat-rw project award'
 		},
 		{
 			placement: '2nd Place',
@@ -18,7 +24,9 @@
 				'Adds learned guidance to Lean 4 tactics like `grind` and `aesop`, combining neural branching heuristics with tooling for collecting and training on proof search data.',
 			link: 'https://github.com/xvade/LeanHackathon2026',
 			team: ['Theo Meek', 'Simon Chess', 'Evan Wang', 'Sophie Szeto'],
-			highlight: 'purple'
+			highlight: 'purple',
+			image: secondPlacePhoto,
+			imageAlt: 'Second place winners posing with the Learned Tactic Branching project award'
 		},
 		{
 			placement: '3rd Place',
@@ -28,7 +36,9 @@
 				'Collects Lean 4 formalizations outside mathlib’s scope, with a workflow for discovering projects, checking them automatically, and promoting accepted work into a shared library.',
 			link: 'https://github.com/Vilin97/lean-pool',
 			team: ['Vasily Ilin', 'Justin Asher'],
-			highlight: 'silver'
+			highlight: 'silver',
+			image: thirdPlacePhoto,
+			imageAlt: 'Third place winners posing with the Lean Pool project award'
 		}
 	];
 
@@ -67,6 +77,10 @@
 					class:winner-card-silver={project.highlight === 'silver'}
 					style="animation-delay: {i * 0.08}s"
 				>
+					<div class="winner-image-wrap">
+						<img src={project.image} alt={project.imageAlt} class="winner-image" />
+					</div>
+
 					<div class="winner-header">
 						<span class="badge" class:badge-gold={project.highlight === 'gold'} class:badge-purple={project.highlight !== 'gold'}>
 							{project.placement}
@@ -147,6 +161,20 @@
 		justify-content: space-between;
 		gap: 1rem;
 		flex-wrap: wrap;
+	}
+
+	.winner-image-wrap {
+		margin: -2rem -2rem 0;
+		overflow: hidden;
+		border-radius: 16px 16px 0 0;
+		border-bottom: 1px solid rgba(139, 84, 250, 0.12);
+	}
+
+	.winner-image {
+		display: block;
+		width: 100%;
+		height: 240px;
+		object-fit: cover;
 	}
 
 	.project-link {

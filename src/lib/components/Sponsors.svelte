@@ -1,4 +1,6 @@
 <script lang="ts">
+	import organizersPhoto from '$lib/assets/organizers.jpg';
+
 	const organizers = [
 		{ name: 'Jarod Alper', department: 'Mathematics', role: 'Faculty', website: 'https://sites.math.washington.edu//~jarod/' },
 		{ name: 'Gilbert Bernstein', department: 'PLSE', role: 'Faculty', website: 'http://gilbertbernstein.com/' },
@@ -27,6 +29,14 @@
 <section id="organizers" class="section" style="position: relative; overflow: hidden;">
 	<div class="container">
 		<h2 class="section-title">Organizers & Sponsors</h2>
+
+		<div class="organizers-photo-card glass-card">
+			<img
+				src={organizersPhoto}
+				alt="Organizers of the UW Lean Hackathon posing together"
+				class="organizers-photo"
+			/>
+		</div>
 
 		<div class="organizers-grid">
 			{#each organizers as person, i}
@@ -79,6 +89,21 @@
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		gap: 1.25rem;
 		margin-bottom: 4rem;
+	}
+
+	.organizers-photo-card {
+		padding: 0;
+		overflow: hidden;
+		margin-bottom: 2rem;
+		max-width: 570px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.organizers-photo {
+		display: block;
+		width: 100%;
+		height: auto;
 	}
 
 	.organizer-card {
