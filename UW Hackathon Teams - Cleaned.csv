@@ -1,0 +1,47 @@
+Team Number,First name,Last Name,Role/level,Project Name,Submission Link,Project Description
+1,Nels,Martin,Undergraduate,LeanDream,https://github.com/ssingh92-ops/LeanDream,"A neuro-symbolic loop where an LLM proposes Boolean circuits as JSON and Lean 4 decides whether each one is correct. Verified circuits are mined for reusable substructure into a growing, Lean-certified macro library; each new macro must itself pass lake build before entering the DSL"
+1,Sukhman,Singh,Undergraduate,,,
+1,Tanish,Vaidya,Undergraduate,,,
+2,Adelin,Ma,Undergraduate,Lean Wiggle Wiggle,leoca42/DALAB-May-2026-Lean-wiggle-wiggle: Lean Hackathon Code!,Perturbing Lean Theorem Statements
+2,Di Qiu,Xiang,Undergraduate,,,
+2,Leo,Carlin,Undergraduate,,,
+2,Anjani,Mirchandani,Undergraduate,,,
+2,Bhavana,Honavalli,Undergraduate,,,
+3,Theo,Meek,Undergraduate,Learned Tactic Branching,https://github.com/xvade/LeanHackathon2026 ,"We enhance Lean 4's automated tactics, specifically grind and aesop, through neural-guided proof search."
+3,Simon,Chess,Undergraduate,,,
+3,Evan,Wang,Undergraduate,,,
+3,Sophie,Szeto,Undergraduate,,,
+4,Kieran,Rullman,Undergraduate,Blossom,https://github.com/oe-parks/Blossom,
+4,John ,Ye,PhD student,,,
+4,Nicholas,Mundy,Undergraduate,,,
+4,Owen,Parks,Undergraduate,,,
+5,Polina,Loukiantchikov,Undergraduate,Genuinely Goated Lean Pips Solver,https://github.com/p0linal1/lean-hackathon,"A formally verified puzzle solver for the New York Times Pips game, built with Lean 4 and delivered as a Chrome extension."
+5,Julie,Ganbold,Undergraduate,,,
+5,Andrey,Kulchenko,Undergraduate,,,
+5,Vivek,Sarkar,Undergraduate,,,
+5,Marko,Subotic,Undergraduate,,,
+6,Stephen,Zhou,High school,LaLe,https://github.com/Defying-gravity62442/lale,"Build trust into mathematical research - our Chrome extension turns Overleaf theorems, definitions, and lemmas into verified Lean 4 Proofs using Claude, verifies them against Mathlib4 in real time, and streams results directly into the editor with live status feedback. Behind the scenes, a persistent LSP pool, retrieval-guided repair loop, and semantic trust checks make Lean accessible to the average Overleaf user."
+6,Vasilisa,Baginskaya,High school,,,
+6,Yash,Meher,Undergraduate,,,
+6,Will,Gao,Undergraduate,,,
+7,Arkamouli,Debnath,PhD student,LeanOrigami,https://github.com/dhruvbhatia00/LeanOrigami.git,"A formalization of the Huzita Hatori Paper folding axioms! In origami, every fold can be made from one of 7 moves, or axioms. Starting with the origin and (1,0), you can keep track of what points you can construct using the axioms. We build up towards a proof that this set of points forms a field that is closed under degree 2 and 3 extensions. We also build a Tactic - the user provides a sequence of folds using the syntax implemented in a custom DSL, and the tactic verifiably computes the coordinates of constructed points and lines. The tactic also interactively displays the ""origami paper state"", showing the user which points and lines have so far been constructed. In the future this can be extended to a widget where new folds are visualized and can be interacted with. "
+7,Mallory,Dolorfino,PhD student,,,
+7,Maryam,Emamjomeh Zadeh,PhD student,,,
+7,Dhruv,Bhatia,PhD student,,,
+8,Leopold,Mayer,PhD student,cat-rw,https://github.com/leomayer1/cat-rw,rewrite under isomorphism
+8,Grant,Yang,Undergraduate,,,
+8,Brian,Nugent,Post-Doc,,,
+9,Derrik,Petrin,Master's Student,Assured Destruction,https://github.com/hlee131/lean-hackathon-2026,"Lean offers a compiler optimization to destructively, i.e., in-place, mutate unshared arrays. To determine if the optimization is in effect, dbgTraceIfShared has to be injected to every usage of the array symbol. We added an elaborator for a new let syntax that instruments every usage of the declared symbol with this runtime check, allowing for cleaner and more readable code."
+9,Hansel,Lee,Undergraduate,,,
+10,Nick,King,Tech Sector Professional,,,
+11,Audrey,Seo,PhD student,,https://github.com/audreyseo/rubiks-cfop-algorithm,"We formalize and verify the beginning step of the algorithm used by humans to solve Rubik's cubes: the white ""cross"" on the top of the cube. This is the first step of the CFOP algorithm."
+11,Pei,Li,Master's Student,,,
+11,Glenn,Sun,PhD student,,,
+12,John,Leo,Independent Researcher,MusicTools,MusicTools,Counterpoint analysis and synthesis
+12,Xuanyu,Yang,Undergraduate,,,
+12,Anders,Lewis,Master's Student,,,
+13,William,Hong,Master's Student,,,
+14,Vasily,Ilin,PhD student,Lean Pool,https://github.com/Vilin97/lean-pool,"A pool of many Lean formalizations of graduate or research-level math, all compiling under the latest Lean version, passing mathlib-style CI, sorry-free, with docs."
+14,Justin,Asher,Independent Researcher,,,
+15,Evan,Gubarev,Undergraduate,Zoogle,https://github.com/e-gubarev/zoogle,
+15,Tim,Avilov,Undergraduate,,,

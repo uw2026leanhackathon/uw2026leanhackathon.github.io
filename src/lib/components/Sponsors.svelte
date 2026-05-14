@@ -62,20 +62,11 @@
 
 		<div class="cta-section">
 			<div class="cta-card glass-card glow-purple">
-				<h2>Ready to Prove Something Amazing?</h2>
+				<h2>Stay Tuned for 2027</h2>
 				<p>
-					Apply to join us May 8–10, 2026 at the University of Washington for two days of hacking,
-					learning, and collaboration around the Lean Proof Assistant.
-					Spaces are limited — applications will be reviewed by the organizing committee.
+					The 2026 hackathon has concluded. We’re excited to build on this year’s projects,
+					community, and collaborations when UW Lean Hackathon returns in 2027.
 				</p>
-				<div class="cta-actions">
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSddhWsNBjHwR04gvikdlyrcbUICzmNJmq0JUDeVXd1huiFdyw/viewform?usp=dialog" class="btn btn-primary" target="_blank" rel="noopener">
-						Apply to Participate →
-					</a>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSdI-axdDzcTjmWrBlEXj7tz_W2Pg0tPXZYhihYKa9ACW7pGRw/viewform?usp=publish-editor" class="btn btn-outline" target="_blank" rel="noopener">
-						RSVP as Invited Guest
-					</a>
-				</div>
 			</div>
 		</div>
 
@@ -221,13 +212,6 @@
 		max-width: 600px;
 		margin: 0 auto 2rem;
 		line-height: 1.7;
-	}
-
-	.cta-actions {
-		display: flex;
-		gap: 1rem;
-		justify-content: center;
-		flex-wrap: wrap;
 	}
 
 	.floating-snippet {

@@ -1,100 +1,251 @@
 <script lang="ts">
-	const challenges = [
+	const winningProjects = [
 		{
-			title: 'Proof by Algorithm: Linear Programming',
-			description: 'Write a tactic that can prove a given point is an optimal solution to a linear program (using duality).'
+			placement: '1st Place',
+			project: 'cat-rw',
+			tagline: 'A category-theoretic rewrite tactic for Lean 4.',
+			description:
+				'Brings category-theoretic rewriting to Lean 4 with `cat_rw`, letting users rewrite objects, goals, and propositions using isomorphisms.',
+			link: 'https://github.com/leomayer1/cat-rw',
+			team: ['Leopold Mayer', 'Grant Yang', 'Brian Nugent'],
+			highlight: 'gold'
 		},
 		{
-			title: 'Proof by Algorithm: Graph Algorithms',
-			description: 'Implement algorithms for graphs such as computing augmenting paths for matchings and flows. Prove that these paths really do augment the matching/flow in the appropriate way.'
+			placement: '2nd Place',
+			project: 'Learned Tactic Branching',
+			tagline: 'Neural-guided automated proof search for Lean 4.',
+			description:
+				'Adds learned guidance to Lean 4 tactics like `grind` and `aesop`, combining neural branching heuristics with tooling for collecting and training on proof search data.',
+			link: 'https://github.com/xvade/LeanHackathon2026',
+			team: ['Theo Meek', 'Simon Chess', 'Evan Wang', 'Sophie Szeto'],
+			highlight: 'purple'
 		},
 		{
-			title: 'Proof by Picture: Paper Folding',
-			description: 'Formalize the Huzita–Hatori Axioms of Paper Folding in Lean and prove that they can be used to solve cubic equations. Build a tool to visualize the folds and verifiably compute the coordinates of points obtained through folds.'
+			placement: '3rd Place',
+			project: 'Lean Pool',
+			tagline: 'A repository for Lean 4 formalizations outside mathlib’s scope.',
+			description:
+				'Collects Lean 4 formalizations outside mathlib’s scope, with a workflow for discovering projects, checking them automatically, and promoting accepted work into a shared library.',
+			link: 'https://github.com/Vilin97/lean-pool',
+			team: ['Vasily Ilin', 'Justin Asher'],
+			highlight: 'silver'
+		}
+	];
+
+	const honorableMentions = [
+		{
+			project: 'LeanDream',
+			link: 'https://github.com/ssingh92-ops/LeanDream',
+			team: ['Nels Martin', 'Sukhman Singh', 'Tanish Vaidya']
 		},
 		{
-			title: 'Sudoku in Lean',
-			description: 'Make Sudoku in Lean. Write a solver for Sudoku in Lean. Prove the correctness of your solver.'
+			project: 'Zoogle',
+			link: 'https://github.com/e-gubarev/zoogle',
+			team: ['Evan Gubarev', 'Tim Avilov']
 		},
 		{
-			title: 'Data Structures for Lean',
-			description: 'Port a useful data structure to Lean and write useful theorems about it. For example, there are many variants of map data structures which may be useful. See <a href="https://github.com/bendyworks/lean-map" target="_blank" rel="noopener">lean-map</a> for inspiration.'
+			project: 'Blossom',
+			link: 'https://github.com/oe-parks/Blossom',
+			team: ['Kieran Rullman', 'John Ye', 'Nicholas Mundy', 'Owen Parks']
 		}
 	];
 </script>
 
 <section id="projects" class="section" style="position: relative; overflow: hidden;">
 	<div class="container">
-		<h2 class="section-title">Project Ideas</h2>
+		<h2 class="section-title">Winning Projects</h2>
 		<p class="section-subtitle">
-			Use these project ideas as inspiration. Feel free to pick from this list, but make sure to put in your own twist! Up-to-date as of April 1, 2026.
+			The inaugural UW Lean Hackathon has concluded. These projects were recognized by the judges
+			for their ambition, execution, and technical depth.
 		</p>
 
-		<ul class="challenges-list">
-			{#each challenges as challenge, i}
-				<li class="challenge-item" style="animation-delay: {i * 0.06}s">
-					<span class="challenge-marker"></span>
-					<div class="challenge-content">
-						<h3>{challenge.title}</h3>
-						<p>{@html challenge.description}</p>
+		<div class="winners-grid">
+			{#each winningProjects as project, i}
+				<article
+					class="winner-card glass-card"
+					class:winner-card-featured={project.highlight === 'gold'}
+					class:winner-card-silver={project.highlight === 'silver'}
+					style="animation-delay: {i * 0.08}s"
+				>
+					<div class="winner-header">
+						<span class="badge" class:badge-gold={project.highlight === 'gold'} class:badge-purple={project.highlight !== 'gold'}>
+							{project.placement}
+						</span>
+						<a href={project.link} class="project-link" target="_blank" rel="noopener">View project ↗</a>
 					</div>
-				</li>
-			{/each}
-		</ul>
 
-		<!-- Decorative Lean snippets -->
-		<div class="floating-snippet snippet-left">
-			<pre><code><span class="kw">theorem</span> <span class="fn">inf_primes</span> (n : ℕ) :
-    ∃ p, n ≤ p ∧ Nat.Prime p :=
-  <span class="fn">Nat.exists_infinite_primes</span> n</code></pre>
+					<h3>{project.project}</h3>
+					<p class="winner-tagline">{project.tagline}</p>
+					<p class="winner-description">{project.description}</p>
+
+					<div class="team-block">
+						<span class="team-label">Team</span>
+						<p>{project.team.join(' • ')}</p>
+					</div>
+				</article>
+			{/each}
 		</div>
+
+		<div class="honorable-mentions">
+			<div class="honorable-header">
+				<h3>Honorable Mentions</h3>
+				<p>Recognized by the judges for standout work.</p>
+			</div>
+
+			<div class="mentions-grid">
+				{#each honorableMentions as project, i}
+					<article class="mention-card glass-card" style="animation-delay: {(i + winningProjects.length) * 0.06}s">
+						<div class="mention-topline">
+							<span class="mention-label">Honorable Mention</span>
+							<a href={project.link} class="project-link" target="_blank" rel="noopener">View project ↗</a>
+						</div>
+						<h4>{project.project}</h4>
+						<p>{project.team.join(' • ')}</p>
+					</article>
+				{/each}
+			</div>
+		</div>
+
 		<div class="floating-snippet snippet-right">
-			<pre><code><span class="kw">#check</span> @List.map
-<span class="cm">-- {'{'}&alpha; &beta; : Type{'}'} &rarr;</span>
-<span class="cm">--   (&alpha; &rarr; &beta;) &rarr; List &alpha; &rarr; List &beta;</span></code></pre>
+			<pre><code><span class="kw">theorem</span> <span class="fn">winner_showcase</span> :
+  first ∧ second ∧ third := by
+  <span class="kw">repeat</span> constructor</code></pre>
 		</div>
 	</div>
 </section>
 
 <style>
-	.challenges-list {
-		list-style: none;
-		max-width: 800px;
-		margin: 0 auto;
+	.winners-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1.5rem;
+		align-items: stretch;
 	}
 
-	.challenge-item {
+	.winner-card {
+		position: relative;
+		animation: fadeInUp 0.6s ease both;
 		display: flex;
-		align-items: flex-start;
-		gap: 1.25rem;
-		padding: 1.25rem 0;
-		border-bottom: 1px solid rgba(139, 84, 250, 0.08);
-		animation: fadeInUp 0.5s ease both;
+		flex-direction: column;
+		gap: 1rem;
+		min-height: 100%;
 	}
 
-	.challenge-item:last-child {
-		border-bottom: none;
+	.winner-card-featured {
+		background: linear-gradient(135deg, rgba(232, 185, 49, 0.12), rgba(139, 84, 250, 0.1));
+		border-color: rgba(232, 185, 49, 0.35);
+		box-shadow: 0 20px 60px rgba(232, 185, 49, 0.08);
 	}
 
-	.challenge-marker {
-		flex-shrink: 0;
-		width: 8px;
-		height: 8px;
-		border-radius: 50%;
-		background: var(--purple-400);
-		margin-top: 0.55rem;
+	.winner-card-silver {
+		background: linear-gradient(135deg, rgba(201, 170, 255, 0.08), rgba(255, 255, 255, 0.03));
 	}
 
-	.challenge-content h3 {
-		font-size: 1.1rem;
-		color: var(--text-heading);
-		margin-bottom: 0.3rem;
+	.winner-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		flex-wrap: wrap;
 	}
 
-	.challenge-content p {
+	.project-link {
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+
+	.winner-card h3 {
+		font-size: 1.6rem;
+		line-height: 1.15;
+	}
+
+	.honorable-mentions {
+		margin-top: 2.5rem;
+		position: relative;
+		z-index: 1;
+	}
+
+	.honorable-header {
+		margin-bottom: 1.25rem;
+	}
+
+	.honorable-header h3 {
+		font-size: 1.2rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.honorable-header p {
 		color: var(--text-muted);
 		font-size: 0.95rem;
+	}
+
+	.mentions-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.mention-card {
+		padding: 1.25rem 1.35rem;
+		animation: fadeInUp 0.6s ease both;
+	}
+
+	.mention-topline {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.75rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.mention-label {
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--purple-200);
+	}
+
+	.mention-card h4 {
+		font-size: 1.1rem;
+		margin-bottom: 0.45rem;
+	}
+
+	.mention-card p {
+		color: var(--text-muted);
+		font-size: 0.9rem;
 		line-height: 1.6;
+	}
+
+	.winner-tagline {
+		color: var(--gold-400);
+		font-weight: 600;
+	}
+
+	.winner-description {
+		color: var(--text-muted);
+		font-size: 0.98rem;
+		line-height: 1.7;
+	}
+
+	.team-block {
+		margin-top: auto;
+		padding-top: 1rem;
+		border-top: 1px solid rgba(139, 84, 250, 0.12);
+	}
+
+	.team-label {
+		display: block;
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--text-muted);
+		margin-bottom: 0.4rem;
+	}
+
+	.team-block p {
+		color: var(--text);
 	}
 
 	@keyframes fadeInUp {
@@ -105,15 +256,6 @@
 		to {
 			opacity: 1;
 			transform: translateY(0);
-		}
-	}
-
-	@media (max-width: 768px) {
-		.challenges-list {
-			max-width: 100%;
-		}
-		.floating-snippet {
-			display: none;
 		}
 	}
 
@@ -135,17 +277,26 @@
 
 	.floating-snippet .kw { color: var(--purple-300); }
 	.floating-snippet .fn { color: var(--gold-400); }
-	.floating-snippet .cm { color: var(--text-muted); }
-
-	.snippet-left {
-		left: 2%;
-		bottom: 6%;
-		transform: rotate(-1.5deg);
-	}
 
 	.snippet-right {
 		right: 2%;
-		top: 8%;
+		bottom: 4%;
 		transform: rotate(1deg);
+	}
+
+	@media (max-width: 1024px) {
+		.winners-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.mentions-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.floating-snippet {
+			display: none;
+		}
 	}
 </style>

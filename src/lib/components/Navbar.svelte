@@ -16,13 +16,10 @@
 			<span class="logo-text">UW Lean Hackathon</span>
 		</a>
 		<div class="nav-links">
-			<a href="#schedule">Schedule</a>
-			<a href="#projects">Projects</a>
-			<a href="#judges">Judges</a>
+			<a href="#projects">Winners</a>
+			<a href="#about">About</a>
+			<a href="#judges">Guests & Judges</a>
 			<a href="#organizers">Organizers & Sponsors</a>
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLSddhWsNBjHwR04gvikdlyrcbUICzmNJmq0JUDeVXd1huiFdyw/viewform" class="btn btn-primary btn-nav" target="_blank" rel="noopener">
-				Apply Now
-			</a>
 		</div>
 	</div>
 </nav>
@@ -87,14 +84,8 @@
 		color: white;
 	}
 
-	.btn-nav {
-		padding: 0.55rem 1.4rem;
-		font-size: 0.85rem;
-		color: white !important;
-	}
-
 	@media (max-width: 768px) {
-		.nav-links a:not(.btn-nav) {
+		.nav-links a {
 			display: none;
 		}
 	}

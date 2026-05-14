@@ -28,21 +28,14 @@
 		</h1>
 
 		<p class="hero-description">
-			A hackathon bringing together students, faculty, and industry partners
-			to work on projects showcasing the power of the
+			The inaugural UW Lean Hackathon brought together students, faculty, and industry partners
+			to build projects showcasing the power of the
 			<a href="https://lean-lang.org/" target="_blank" rel="noopener">Lean Proof Assistant</a>.
 			Projects span algorithm-driven proofs, pictorial reasoning, paper folding,
 			games, data structures, and AI-driven autoformalization.
 		</p>
 
-		<div class="hero-actions">
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLSddhWsNBjHwR04gvikdlyrcbUICzmNJmq0JUDeVXd1huiFdyw/viewform?usp=dialog" class="btn btn-primary" target="_blank" rel="noopener">
-				Apply to Participate →
-			</a>
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdI-axdDzcTjmWrBlEXj7tz_W2Pg0tPXZYhihYKa9ACW7pGRw/viewform?usp=publish-editor" class="btn btn-outline" target="_blank" rel="noopener">
-				RSVP as Invited Guest
-			</a>
-		</div>
+		<p class="hero-note">Stay tuned for more in 2027.</p>
 	</div>
 
 	<!-- Floating code snippet decoration -->
@@ -178,11 +171,17 @@
 		text-underline-offset: 3px;
 	}
 
-	.hero-actions {
-		display: flex;
-		gap: 1rem;
+	.hero-note {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.8rem 1.2rem;
+		border-radius: 999px;
+		border: 1px solid rgba(139, 84, 250, 0.24);
+		background: rgba(139, 84, 250, 0.08);
+		color: var(--purple-200);
+		font-weight: 600;
+		letter-spacing: 0.01em;
 		margin-bottom: 4rem;
-		flex-wrap: wrap;
 	}
 
 	/* Floating code decoration */

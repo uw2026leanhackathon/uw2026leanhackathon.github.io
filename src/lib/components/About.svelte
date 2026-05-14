@@ -38,7 +38,7 @@
 		<span class="badge badge-purple">About the Event</span>
 		<h2 class="section-title">Why Lean Hackathon?</h2>
 		<p class="section-subtitle">
-			An invitation-only event at the intersection of mathematics, programming languages, and AI — hosted at the University of Washington. Apply and our organizers will review your application.
+			An invitation-only event at the intersection of mathematics, programming languages, and AI — hosted at the University of Washington. 
 		</p>
 
 		<div class="goals-grid">
