@@ -66,7 +66,7 @@
 		<h2 class="section-title">Winning Projects</h2>
 		<p class="section-subtitle">
 			The inaugural UW Lean Hackathon has concluded. These projects were recognized by the judges
-			for their ambition, execution, and technical depth.
+			for their novelty, technical execution, and community impact!
 		</p>
 
 		<div class="winners-grid">
